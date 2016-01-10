@@ -1,0 +1,59 @@
+body {
+  background-color: purple;
+
+}
+#Welcome {
+
+  text-align: center;
+  text-decoration: inherit;
+  font-size: 175%;
+  margin-top: 0%;
+  margin-right: 0%;
+  margin-bottom: 5%;
+  margin-left: 0%;
+  background-color: grey;
+  padding: 5%;
+
+
+
+
+}
+#imgs {
+  display: inline-flex;
+}
+
+
+#Meerkat {
+  font-family: sans-serif;
+  text-decoration: underline;
+  font-size: 150%;
+
+
+
+
+
+}
+
+#Picone {
+  float:left;
+  padding-left: 5%
+
+
+}
+
+#Pictwo {
+
+  float: right;
+  padding-right: 5%;
+
+}
+
+#Llama {
+  font-family: sans-serif;
+  text-decoration: underline;
+  font-size: 150%;
+
+
+
+
+}

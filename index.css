@@ -1,5 +1,6 @@
 body {
-  background-color: purple;
+  background-color: #9900CC;
+
 
 }
 #Welcome {
@@ -9,46 +10,76 @@ body {
   font-size: 175%;
   margin-top: 0%;
   margin-right: 0%;
+  margin-bottom: 0%;
+  margin-left: 0%;
+  background-color: grey;
+  padding: 5%;
+  border: 1px solid #ccc
+
+}
+
+
+#Instruction  {
+  text-aling: center;
+  text-decoration: inherit;
+  font-size: 175%;
+  margin-top: 0%;
+  margin-right: 0%;
   margin-bottom: 5%;
   margin-left: 0%;
   background-color: grey;
   padding: 5%;
-
-
+  border: 1px solid #ccc;
 
 
 }
-#imgs {
+div.img {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+/*div.img:hover {
+    border: 1px solid #777;
+}*/
+
+div.img img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+/*Got this code off of W3school site, altered it for what I wanted to do.*/
+
+
+
+
+/*#imgs {
   display: inline-flex;
-}
+}*/
 
 
-#Meerkat {
+/*#Meerkat {
   font-family: sans-serif;
   text-decoration: underline;
   font-size: 150%;
+}*/
 
+/
 
-
-
-
-}
-
-#Picone {
-  float:left;
-  padding-left: 5%
-
-
-}
-
-#Pictwo {
+/*#Pictwo {
 
   float: right;
   padding-right: 5%;
 
-}
+}*/
 
-#Llama {
+/*#Llama {
   font-family: sans-serif;
   text-decoration: underline;
   font-size: 150%;
@@ -56,4 +87,4 @@ body {
 
 
 
-}
+}*/

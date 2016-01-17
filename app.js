@@ -1,91 +1,108 @@
 
 var questionRight= 0;
 var questionWrong= 0;
+var userName = prompt ('Welcome, who is playing the game?');
 
 
 
 
 
-var userAnimal = prompt('Hey there stranger! What\'s my favorite animal, Meerkat or Llama?');
+var userAnimal = prompt(' Hey there ' + ( userName ) + ',' + ' What\'s my favorite animal, Meerkat or Llama?');
 
-if (userAnimal == 'Meerkat' ) {
-  questionRight++
-    console.log('Congrats, You are one cool cat!');
-    alert("Congrats, You are one cool cat!")
+  if (userAnimal == 'Meerkat' ) {
+    questionRight++
+    console.log(' Congrats ' + ( userName ) +  ' You are one cool cat!');
+    alert(' Congrats ' + ( userName ) +  ' ,You are one cool cat!')
   }
   else if (userAnimal == 'Llama' ) {
     questionWrong++
-    console.log('Not the right answer!');
-    alert("Not the right answer!")
+    console.log(' Not the right answer, '  +  ( userName ) + '!');
+    alert(' Not the right answer, '  +  ( userName ) + '!');
   }
   else {
     questionWrong++
- console.log('You didn\'t guess the correct name.');
- console.log('Try again.');
- alert("Try again");
+    console.log(' You didn\'t guess the correct name. ' + (userName) + '!' );
+    alert(' You didn\'t guess the correct name. ' + (userName) + '!' );
 }
 
-var userMusic = prompt('Next Question, What\'s my favorite musician? Pick between Frank Zappa or John Tesh');
-
-
-if (userMusic == 'Frank Zappa' ) {
+ var userMusic = prompt(' Next Question, ' + (userName) + ',' + ' What\'s my favorite musician? Pick between Frank Zappa or John Tesh. ');
+    if (userMusic == 'Frank Zappa' ) {
   questionRight++
-    console.log('Fantastic choice, the other option is terrible!');
-    alert("Fantastic choice, the other option is terrible!")
+    console.log('Fantastic choice, ' + (userName) + ',' + ' the other option is terrible!');
+    alert('Fantastic choice, ' + (userName) + ',' + ' the other option is terrible!');
   }
-  else if (userMusic == 'John Tesh' ) {
+    else if (userMusic == 'John Tesh' ) {
     questionWrong++
-    console.log('Not the right answer!');
-    alert("Not the right answer!")
+    console.log('Not the right answer ' + (userName) + '!');
+    alert('Not the right answer ' + (userName) + '!');
   }
-  else {
+    else {
     questionWrong++
- console.log('You didn\'t guess the correct name.');
- console.log('Try again.');
- alert("Try again");
+    console.log('You didn\'t guess the correct name.');
+    alert("Try again");
 }
 
- var userVegetable = prompt('Next up is favorite vegetable, Avocado or Beets');
+ var userVegetable = prompt('Next up ' + (userName) + ',' + ' pick my favorite vegetable, Avocado or Beets?');
 
- if (userVegetable == 'Avocado' ) {
+    if (userVegetable == 'Avocado' ) {
    questionRight++
-     console.log('Right on! Glad you did not pick beets!');
-     alert("Right on! Glad you did not pick beets!")
+     console.log('Right on! ' + (userName) + ',' + ' Glad you did not pick beets!');
+     alert('Right on! ' + (userName) + ',' + ' Glad you did not pick beets!');
    }
-   else if (userVegetable == 'Beets' ) {
+    else if (userVegetable == 'Beets' ) {
      questionWrong++
-     console.log('What a horrible decision!');
-     alert("What a horrible decision!")
+     console.log('What a horrible decision ' + (userName) + '!');
+     alert('What a horrible decision ' + (userName) + '!');
    }
-   else {
+    else {
      questionWrong++
-  console.log('You didn\'t guess the correct name.');
-  console.log('Try again.');
-  alert("Try again");
+     console.log('You didn\'t guess the correct name.');
+     alert('You didn\'t guess the correct name.')
  }
 
- var userState = prompt('Another question, What state was I born in? Oklahoma or Washington?');
+ var userState = prompt('Another question ' + (userName) + ',' + ' What state was I born in? Oklahoma or Washington?');
 
- if (userState == 'Oklahoma' ) {
-   questionRight++
-     console.log('Congrats, That\'s the one!');
-     alert("Congrats, That\'s the one!")
+   if (userState == 'Oklahoma' ) {
+     questionRight++
+     console.log('Congrats ' + (userName) + ',' + ' That\'s the one!');
+     alert('Congrats ' + (userName) + ',' + ' That\'s the one!');
    }
    else if (userState == 'Washington' ) {
      questionWrong++
-     console.log('Not a bad one, but not correct!');
-     alert("Not a bad one, but not correct!")
+     console.log('Not a bad one, but not correct ' + (userName) + '!' );
+     alert('Not a bad one, but not correct ' + (userName) + '!' );
    }
    else {
      questionWrong++
-  console.log('You didn\'t guess the correct name.');
-  console.log('Try again.');
-  alert("Try again");
+     console.log('You didn\'t guess the correct name.');
+     console.log('Try again.');
+     alert("Try again");
+}
 
- }
+var userNumber = parseInt(prompt('Another question ' + (userName) + ',' + ' Guess my favorite number, between 1 and 10!'));
+    console.log(typeof userNumber);
+
+while (userNumber !== 5) {
+  if (userNumber < 5) {
+    questionWrong++
+    console.log('You guessed a little low,' + (userName));
+    alert('You guessed a little low,' + (userName));
+  } else if (userNumber > 5) {
+    questionWrong++
+    console.log('You guessed too high, ' + (userName));
+    alert('You guessed a little high,' + (userName));
+
+  }
+  userNumber = parseInt(prompt('Guess my favorite number!'));
+}
+
+  questionRight++
+  console.log('Congrats ' + (userName) + ',' + ' That\'s the one!');
+  alert('Congrats ' + (userName) + ',' + ' That\'s the one!');
 
 
-alert(" You got "  + questionRight + " out of 4 questions correct!");
-  console.log(" You got "  + questionRight + " out of 4 questions correct!");
-alert("You got " + questionWrong + " out of 4 questions wrong! ");
-  console.log("You got " + questionWrong + " out of 4 questions wrong! ")
+
+alert(" You got "  + questionRight + " out of 5 questions correct!");
+  console.log(" You got "  + questionRight + " out of 5 questions correct!");
+alert("You got " + questionWrong + " out of 5 questions wrong! ");
+  console.log("You got " + questionWrong + " out of 5 questions wrong! ")

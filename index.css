@@ -7,7 +7,7 @@ body {
 
   text-align: center;
   text-decoration: inherit;
-  font-size: 175%;
+  font-size: 110%;
   margin-top: 0%;
   margin-right: 0%;
   margin-bottom: 0%;
@@ -20,71 +20,30 @@ body {
 
 
 #Instruction  {
-  text-aling: center;
+  text-align:  center;
   text-decoration: inherit;
-  font-size: 175%;
+  font-size: 110%;
   margin-top: 0%;
   margin-right: 0%;
-  margin-bottom: 5%;
+  margin-bottom: 0%;
   margin-left: 0%;
   background-color: grey;
   padding: 5%;
   border: 1px solid #ccc;
-
-
-}
-div.img {
-    margin: 5px;
-    border: 1px solid #ccc;
-    float: left;
-    width: 180px;
+  height: 200px;
 }
 
-/*div.img:hover {
-    border: 1px solid #777;
-}*/
+#Response {
+  text-align: center;
+  text-decoration: inherit;
+  font-size: 110%;
+  margin-top: 0%;
+  margin-right: 0%;
+  margin-bottom: 0%;
+  margin-left: 0%;
+  background-color: grey;
+  padding: 5%;
+  border: 1px solid #ccc;
+  height: 200px;
 
-div.img img {
-    width: 100%;
-    height: auto;
 }
-
-div.desc {
-    padding: 15px;
-    text-align: center;
-}
-
-/*Got this code off of W3school site, altered it for what I wanted to do.*/
-
-
-
-
-/*#imgs {
-  display: inline-flex;
-}*/
-
-
-/*#Meerkat {
-  font-family: sans-serif;
-  text-decoration: underline;
-  font-size: 150%;
-}*/
-
-/
-
-/*#Pictwo {
-
-  float: right;
-  padding-right: 5%;
-
-}*/
-
-/*#Llama {
-  font-family: sans-serif;
-  text-decoration: underline;
-  font-size: 150%;
-
-
-
-
-}*/

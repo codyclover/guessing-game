@@ -7,22 +7,7 @@ body {
 
   text-align: center;
   text-decoration: inherit;
-  font-size: 110%;
-  margin-top: 0%;
-  margin-right: 0%;
-  margin-bottom: 0%;
-  margin-left: 0%;
-  background-color: grey;
-  padding: 5%;
-  border: 1px solid #ccc
-
-}
-
-
-#Instruction  {
-  text-align:  center;
-  text-decoration: inherit;
-  font-size: 110%;
+  font-size: 150%;
   margin-top: 0%;
   margin-right: 0%;
   margin-bottom: 0%;
@@ -30,7 +15,24 @@ body {
   background-color: grey;
   padding: 5%;
   border: 1px solid #ccc;
-  height: 200px;
+  height: 160px;
+
+
+}
+
+
+#Instruction  {
+  text-align:  center;
+  text-decoration: inherit;
+  font-size: 150%;
+  margin-top: 0%;
+  margin-right: 0%;
+  margin-bottom: 0%;
+  margin-left: 0%;
+  background-color: grey;
+  padding: 5%;
+  border: 1px solid #ccc;
+  height: 160px;
 }
 
 #Response {
